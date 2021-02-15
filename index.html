@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Booster</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/58237fbc2d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <h1>To Do</h1>
+    <h2>To Do will Organize your Calls, Meetings and Reminders, making you Focus on Work</h2>
+
+    <div class="flex-row-container">
+        <div class="item shadow-item"><input id="taskCreator" class="user-input" type="text"
+                placeholder="What's your next task..." maxlength="35"></div>
+        <div class=" item plus" id="plus"></div>
+        <div class=" item plus tick" id="add"></div>
+    </div>
+
+    <div id="successMsg">
+        <p class="success">Successfully added to the list!</p>
+    </div>
+    <div id="errorMsg">
+        <p class="error">Please enter the text to create a task or reminder.</p>
+    </div>
+
+    <div class="flex-row-container settings">
+        <div class="item">
+            <input id="taskCreatorDesc" class="user-input" type="text" placeholder="Your task description..."
+                maxlength="36">
+        </div>
+        <div class="item">
+            <label>Task Priority:</label>
+            <select name="priority" id="taskCreatorPriority">
+                <option value="HighPrio">High Priority</option>
+                <option value="MediumPrio">Medium Priority</option>
+                <option value="LowPrio">Low Priority</option>
+                <option value="NoPrio">No Priority</option>
+            </select>
+        </div>
+        <div class="item">
+            <label>Category:</label>
+            <select name="category" id="taskCreatorCategory">
+                <option value="Reminder">Reminder</option>
+                <option value="Notes">Notes</option>
+            </select>
+        </div>
+        <div class="item" id="dateDiv">
+            <label for="start">Start date:</label>
+        </div>
+        <div class="item">
+            <label for="head">Label</label>
+            <input type="color" id="colorDiv" name="head" value="#8e8c7b">
+        </div>
+    </div>
+
+    <div class="flex-row-container second-section">
+        <div class="flex-column-container" id="reminderList">
+        </div>
+        <div class="flex-column-container" id="notesList">
+        </div>
+        <div class="flex-column-container" id="completedList">
+        </div>
+    </div>
+    <div class="footer">
+        <div>Designed and developed by Ansh Yadav. Check my more projects on <a
+                href="https://github.com/anshyadav">GitHub Account</a>. You can reach out to me on <a
+                href="https://www.linkedin.com/in/anshyadav/">Linked In.</a></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
