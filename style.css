@@ -1,7 +1,7 @@
 body {
   background-image: linear-gradient(to top, rgba(250, 249, 247, 0.1) 0%, rgba(221, 218, 209, 0.2) 100%), url(background.svg);
   background-repeat: no-repeat;
-  background-size: 1500px 618px;
+  background-size: 100% 17%;
   font-family: Perpetua !important;
   margin: 0px;
 }
@@ -215,7 +215,7 @@ input:focus {
   left: 40% !important;
 }
 
-@media screen and (max-width:625px) and (min-width:480px){
+@media screen and (max-width:625px) {
   .pr-date-msg{
     font-size: 10px;
   }
@@ -229,7 +229,7 @@ input:focus {
   }
 }
 
-@media screen and (max-width: 1330px) and (min-width:626px) {
+@media screen and (max-width: 1330px) {
 
   .title-msg {
     font-size: 15px;
