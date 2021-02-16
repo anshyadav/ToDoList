@@ -1,13 +1,16 @@
 let toggleValue = false;
 window.onload = function () {
     preProcess();
+    addDateField()
 }
 
-function preProcess() {
+function addDateField(){
     var a = new Date().toLocaleDateString().split('/');
     currDate = a[2] + "-" + a[0] + "-" + a[1];
     document.getElementById("dateDiv").innerHTML += '<input type="date" id="start" name="trip-start" value="' + currDate + '" min="2020-02-11" max="2090-12-31">';
+}
 
+function preProcess() {
 
     //Fetching reminder and notes from cached location
     let keys = [];
@@ -151,7 +154,7 @@ function saveItBtn(e) {
             dateValue = new Date().toLocaleDateString();
         }
 
-        let insertTask = '<div class="saved-item-label" data-category="' + categoryValue + '" data-id="' + taskId + '" style="display: flex;flex-flow: row; border-left: 4px solid ' + colorValue + ';background-color:' + hexToRgb(colorValue) + ';"><div class="item pr-date-msg"><p>' + priorityValue[0] + '</p><p>' + priorityValue[1] + '</p><p>' + dateValue + '</p></div><div class="item action-msg"><p class="title-msg">' + data + '</p><p class="description-msg">' + descData + '</p></div><div class="item delete-btn"><i class="fas fa-check-circle fa-2x"></i></div></div>';
+        let insertTask = '<div class="saved-item-label" data-category="' + categoryValue + '" data-id="' + taskId + '" style="display: flex;flex-flow: row; border-left: 4px solid ' + colorValue + ';background-color:' + hexToRgb(colorValue) + ';"><div class="item pr-date-msg"><p>' + priorityValue[0] + '</p><p style="margin-block-start: 0.3em;">' + priorityValue[1] + '</p><p>' + dateValue + '</p></div><div class="item action-msg"><p class="title-msg">' + data + '</p><p class="description-msg">' + descData + '</p></div><div class="item delete-btn"><i class="fas fa-check-circle fa-2x"></i></div></div>';
 
         if (categoryValue == "Reminder") {
             document.getElementById("reminderList").innerHTML += insertTask;

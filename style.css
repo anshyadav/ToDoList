@@ -30,13 +30,15 @@ h2 {
 
 .flex-column-container {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   align-items: center;
   padding: 2% 1%;
   width: 31%;
   min-height: 400px;
   backdrop-filter: blur(15px);
   background-color: rgba(221, 218, 209, 0.6);
+  overflow-y: auto;
+  max-height: 400px;
 }
 
 .flex-row-container {
@@ -79,7 +81,7 @@ input:focus {
   position: relative;
   float: left;
   width: 100%;
-  height: 70px;
+  height: 75px;
   left: 0;
   background-color: #F1F1EF;
   list-style: none;
@@ -215,9 +217,15 @@ input:focus {
   left: 40% !important;
 }
 
+.list-heading{
+  position: relative;
+    margin-bottom: -144px;
+    justify-content: space-around;
+}
+
 @media screen and (max-width:625px) {
   .pr-date-msg{
-    font-size: 10px;
+    font-size: 14px;
   }
   .flex-column-container{
     width: 100%;
