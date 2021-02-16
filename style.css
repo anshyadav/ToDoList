@@ -33,7 +33,7 @@ h2 {
   flex-flow: column wrap;
   align-items: center;
   padding: 2% 1%;
-  width: 30%;
+  width: 31%;
   min-height: 400px;
   backdrop-filter: blur(15px);
   background-color: rgba(221, 218, 209, 0.6);
@@ -111,62 +111,6 @@ input:focus {
   background-position: center;
 }
 
-.plus__line {
-  width: 6px;
-  height: 34px;
-  background: #fff;
-  border-radius: 10px;
-  position: absolute;
-  left: calc(50% - 3px);
-  top: calc(50% - 16.5px);
-}
-
-.plus__line--h {
-  transform: rotate(90deg);
-}
-
-.plus__line--v {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  overflow: hidden;
-  transition: all 0.4s ease 0s;
-}
-
-.plus__link {
-  color: #fff;
-  font-size: 30px;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s ease 0s;
-  transform: scale(0.5);
-}
-
-.plus--active {
-  height: 32px;
-  border-radius: 30px;
-}
-
-.plus--active .plus__line--v {
-  height: 60px;
-  top: calc(335% - 60px);
-  padding: 0 2px;
-  box-sizing: border-box;
-  width: 2280%;
-  border-radius: 5px;
-  left: calc(-960% - 241px);
-  backdrop-filter: blur(10px);
-  background-color: rgba(221, 218, 209, 0.3);
-}
-
-.plus--active .plus__link {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1);
-  transition-delay: 0.05s;
-}
-
-
 .tick {
   background-image: url(tick.png);
   background-repeat: no-repeat;
@@ -231,7 +175,7 @@ input:focus {
 }
 
 .title-msg {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 
 }
@@ -261,10 +205,55 @@ input:focus {
   position: absolute;
   font-size: 20px;
 }
+
 #errorMsg {
   color: red;
 }
-#successMsg{
+
+#successMsg {
   color: green;
   left: 40% !important;
 }
+
+@media screen and (max-width:625px) and (min-width:480px){
+  .pr-date-msg{
+    font-size: 10px;
+  }
+  .flex-column-container{
+    width: 100%;
+    border: 2px solid aliceblue;
+    border-bottom: 14px solid white;
+  }
+  .plus{
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1330px) and (min-width:626px) {
+
+  .title-msg {
+    font-size: 15px;
+  }
+
+  .description-msg {
+    font-size: 14px;
+  }
+
+  .flex-row-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .flex-column-container{
+    width: 95%;
+    border: 2px solid aliceblue;
+    border-bottom: 14px solid white;
+  }
+  .pr-date-msg {
+    width: 150px;
+}
+.action-msg {
+  width: 627px;
+  padding-right: 80px;
+}
+}
+
