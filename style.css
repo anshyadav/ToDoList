@@ -258,5 +258,13 @@ input:focus {
   width: 627px;
   padding-right: 80px;
 }
+#successMsg{
+    left: 24% !important;
+    top: 48%;
+}
+#errorMsg {
+  left: 7%;
+  top: 48%;
+}
 }
 

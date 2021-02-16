@@ -142,7 +142,7 @@ function saveItBtn(e) {
 
         let descData = descriptionElement.value;
         let taskId = Date.now();
-        let priorityValue = priorityElement.options[priorityElement.selectedIndex].text;
+        let priorityValue = priorityElement.options[priorityElement.selectedIndex].text.split(" ");
         let categoryValue = categoryElement.options[categoryElement.selectedIndex].text;
         dateValue = new Date(document.getElementById("start").value).toLocaleDateString();
         colorValue = colorElement.value;
@@ -151,7 +151,7 @@ function saveItBtn(e) {
             dateValue = new Date().toLocaleDateString();
         }
 
-        let insertTask = '<div class="saved-item-label" data-category="' + categoryValue + '" data-id="' + taskId + '" style="display: flex;flex-flow: row; border-left: 4px solid ' + colorValue + ';background-color:' + hexToRgb(colorValue) + ';"><div class="item pr-date-msg"><p>' + priorityValue + '</p><p>' + dateValue + '</p></div><div class="item action-msg"><p class="title-msg">' + data + '</p><p class="description-msg">' + descData + '</p></div><div class="item delete-btn"><i class="fas fa-check-circle fa-2x"></i></div></div>';
+        let insertTask = '<div class="saved-item-label" data-category="' + categoryValue + '" data-id="' + taskId + '" style="display: flex;flex-flow: row; border-left: 4px solid ' + colorValue + ';background-color:' + hexToRgb(colorValue) + ';"><div class="item pr-date-msg"><p>' + priorityValue[0] + '</p><p>' + priorityValue[1] + '</p><p>' + dateValue + '</p></div><div class="item action-msg"><p class="title-msg">' + data + '</p><p class="description-msg">' + descData + '</p></div><div class="item delete-btn"><i class="fas fa-check-circle fa-2x"></i></div></div>';
 
         if (categoryValue == "Reminder") {
             document.getElementById("reminderList").innerHTML += insertTask;
