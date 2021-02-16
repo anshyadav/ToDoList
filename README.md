@@ -44,6 +44,9 @@
 ## Screenshots
 ![Alt text](/Preview/Add a task without any optional settings.png?raw=true "Title")
 
+![alt text](https://github.com/anshyadav/ToDoList/blob/main/Preview/Add%20a%20task%20without%20any%20optional%20settings.png)
+
+
 ## App Features
 
 ## Contributing
