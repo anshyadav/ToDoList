@@ -42,12 +42,41 @@
 - 
 
 ## Screenshots
-![Alt text](/Preview/Add a task without any optional settings.png?raw=true "Title")
 
-![alt text](https://github.com/anshyadav/ToDoList/blob/main/Preview/Add%20a%20task%20without%20any%20optional%20settings.png)
+> Add a reminder without any option settings
+
+![Add a reminder without any option settings](https://github.com/anshyadav/ToDoList/blob/main/Preview/Add%20a%20task%20without%20any%20optional%20settings.png)
+
+> Toggle to open the settings menu
+
+![Toggle to open the settings menu](https://github.com/anshyadav/ToDoList/blob/main/Preview/Toggle%20to%20open%20the%20additional%20settings.png)
+
+> Set the reminder name, description, priority of the task, date, category and color
+
+![Set the reminder name, description, priority of the task, date, category and color](https://github.com/anshyadav/ToDoList/blob/main/Preview/Set%20the%20Task%20name%2C%20description%2C%20priority%20of%20the%20task%2C%20date%2C%20category%20and%20label%20color.png)
+
+> Add a reminder with the above given optional settings
+
+![Add a reminder with the above given optional settings](https://github.com/anshyadav/ToDoList/blob/main/Preview/Add%20a%20task%20with%20optional%20settings.png)
+
+> Add a note
+
+![Add a note](https://github.com/anshyadav/ToDoList/blob/main/Preview/Add%20a%20note.png)
+
+> Mark notes and reminder as complete
+
+![Mark notes and reminder as complete](https://github.com/anshyadav/ToDoList/blob/main/Preview/Mark%20the%20notes%20and%20task%20complete%20.png)
 
 
 ## App Features
+
+- Add a quick reminder without any option settings
+- Toggle to open the settings menu
+- Set the reminder name, description, priority of the task, date, category and color
+- Add a reminder with the above given optional settings
+- Add a note quickly
+- You can easily mark the notes and reminder as complete
+- Access your reminders and notes from any device
 
 ## Contributing
 
