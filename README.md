@@ -42,7 +42,7 @@
 - 
 
 ## Screenshots
-
+![Alt text](/Preview/Add a task without any optional settings.png?raw=true "Title")
 
 ## App Features
 
