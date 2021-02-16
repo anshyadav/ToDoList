@@ -1,7 +1,7 @@
 body {
   background-image: linear-gradient(to top, rgba(250, 249, 247, 0.1) 0%, rgba(221, 218, 209, 0.2) 100%), url(background.svg);
   background-repeat: no-repeat;
-  background-size: 100% 17%;
+  /*background-size: 100% 17%;*/
   font-family: Perpetua !important;
   margin: 0px;
 }
@@ -134,7 +134,7 @@ input:focus {
   height: 60px;
   padding: 0 2px;
   box-sizing: border-box;
-  width: 1200px;
+  width: 100%;
   border-radius: 5px;
   backdrop-filter: blur(10px);
   background-color: rgba(221, 218, 209, 0.3);
